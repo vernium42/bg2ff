@@ -1,2 +1,2 @@
-# bg2ff
+# bq2ff
 Save query from Bigquery to a flatfile
