@@ -1,4 +1,4 @@
-from setuptools
+import setuptools
 
 setuptools.setup(name='bq2ff',
       version='0.2',
