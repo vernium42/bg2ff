@@ -1,7 +1,7 @@
 # bq2ff
-Save query from Bigquery to a flatfile - Great for pulling samples to work locally
+Save query from Bigquery to a flat-file - Great for pulling samples to work locally
 ## How to install bq2ff
-### Create virtual environment
+### Create a virtual environment
 ```shell
 python3 -m venv venv
 ```
@@ -12,7 +12,7 @@ pip3 install git+https://github.com/vernium42/bq2ff.git
 ```
 
 ## Example
-- Get a service account json file if you do not already have one that has access to Bigquery:
+- Get a service account JSON file if you do not already have one that has access to Bigquery:
 
     https://cloud.google.com/docs/authentication/getting-started
 
