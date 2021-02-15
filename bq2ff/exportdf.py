@@ -89,13 +89,14 @@ class ExportDF:
     @staticmethod
     def type_factory(file_type):
         types = {
-            "csv": TypeCSV,
-            "excel": TypeExcel,
-            "parquet": TypeParquet
+            "csv": TypeCSV(),
+            "excel": TypeExcel(),
+            "parquet": TypeParquet()
         }
-        return types[file_type]
-
-        raise Exception("File format not supported.")
+        try:
+            return types[file_type]
+        except Exception:
+            raise Exception("File format not supported.")
 
     def save(self, df):
         if self.is_created:
