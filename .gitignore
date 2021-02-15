@@ -129,7 +129,12 @@ dmypy.json
 .pyre/
 
 # Test script
+*.json
+*.csv
 test.py
 
 # Editor's
 .vscode/
+
+#Environment
+/venv
