@@ -88,12 +88,12 @@ class ExportDF:
 
     @staticmethod
     def type_factory(file_type):
-        if file_type == 'csv':
-            return TypeCSV()
-        elif file_type == 'excel':
-            return TypeExcel()
-        elif file_type == 'parquet':
-            return TypeParquet()
+        types = {
+            "csv": TypeCSV,
+            "excel": TypeExcel,
+            "parquet": TypeParquet
+        }
+        return types[file_type]
 
         raise Exception("File format not supported.")
 
