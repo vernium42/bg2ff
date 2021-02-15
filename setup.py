@@ -1,10 +1,4 @@
-import os
 import setuptools
-
-folder_path = os.path.dirname(os.path.realpath(__file__))
-requirements = folder_path + '/requirements.txt'
-with open(requirements) as f:
-      requires = f.read().splitlines()
 
 setuptools.setup(name='bq2ff',
       version='0.2',
@@ -12,5 +6,5 @@ setuptools.setup(name='bq2ff',
       url='https://github.com/vernium42/bq2ff',
       author='Vernium42',
       license='MIT',
-      install_requires=requires,
+      install_requires=['numpy==1.20.1', 'pandas==1.2.2', 'pyarrow==3.0.0', 'python-dateutil==2.8.1', 'pytz==2021.1', 'six==1.15.0'],
       packages=setuptools.find_packages())
